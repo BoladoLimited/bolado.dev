@@ -89,21 +89,15 @@ body::before {
 	<meta name="theme-color" content="#FFF000">
 	<meta name="description" content="Just relax">
 	<link rel="shortcut icon" href="/favicon.ico">
-        <meta charset="utf-8">
-	<script>
-	window.addEventListener("load", function(){
-	var audioelem = document.createElement('audio');
-	audioelem.setAttribute('autoplay','true');
-	audioelem.setAttribute('src','https://bolado.dev/assets/music.mp3');
-	audioelem.setAttribute('volume','0.2');			     
-	document.body.appendChild(audioelem);
-	});
-	</script>
+    <meta charset="utf-8">
+	
 </head>
 <body translate="no" >
-
+<audio id="player" loop>
+			<source src="assets/music.mp3" type="audio/mp3" volume="0.2">
+		</audio>
   <center><div style="width: 300px;">
-    <p style="font-family: monospace;color: #fa8d7c;font-size: 14px;margin-left: 50px;">
+    <p style="font-family: monospace;color: #fa8d7c;font-size: 14px">
     Igor, developer
     <br>
     Discord: Bolado#6969
@@ -114,7 +108,7 @@ body::before {
     </p></div></center>
 
   
-      <script id="rendered-js">
+    <script id="rendered-js">
 // Using this brilliant gif https://i.pinimg.com/originals/97/e9/79/97e979731beadb50be38e6e273ebfeef.gif
 
     </script>
@@ -124,6 +118,6 @@ body::before {
 
 
 
-
+<script src="js/script.js"></script>
 </body>
 </html>
