@@ -90,14 +90,17 @@ body::before {
 	<meta name="description" content="Just relax">
 	<link rel="shortcut icon" href="/favicon.ico">
         <meta charset="utf-8">
-	
+	<script>
+	window.addEventListener("load", function(){
+	var audioelem = document.createElement('audio');
+	audioelem.setAttribute('autoplay','true');
+	audioelem.setAttribute('src','/assets/music.mp3');
+	audioelem.setAttribute('volume','0.2');			     
+	document.body.appendChild(audioelem);
+	});
+	</script>
 </head>
-<body translate="no" onload="window.addEventListener("load", function(){
-							   var audioelem = document.createElement('audio');
-audioelem.setAttribute('autoplay','true');
-audioelem.setAttribute('src','/assets/music.mp3');
-audioelem.setAttribute('volume','0.2');			     
-document.body.appendChild(audioelem);});">
+<body translate="no" >
 
   <center><div style="width: 300px;">
     <p style="font-family: monospace;color: #fa8d7c;font-size: 14px;margin-left: 50px;">
